@@ -40,7 +40,7 @@ func GetMongoClient() *mongo.Client {
 	// Get MongoDB URI from environment variable
 	uri := os.Getenv("MONGODB_URI")
 	if uri == "" {
-		uri = "mongodb://127.0.0.1:27017" // Default fallback
+		uri = "mongodb://localhost:27017" // Default fallback
 	}
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
