@@ -44,7 +44,7 @@ Before running this project, make sure you have:
    cp .env.example .env
    
    # Edit .env file with your MongoDB connection string
-   MONGODB_URI=mongodb://127.0.0.1:27017
+   MONGODB_URI=mongodb://localhost:27017
    ```
 
 4. **Start MongoDB**
@@ -145,7 +145,7 @@ go_mongoDB_beginner_project/
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `MONGODB_URI` | MongoDB connection string | `mongodb://127.0.0.1:27017` |
+| `MONGODB_URI` | MongoDB connection string | `mongodb://localhost:27017` |
 | `SERVER_PORT` | Server port | `3000` |
 | `SERVER_HOST` | Server host | `localhost` |
 
